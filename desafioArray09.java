@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 
-public class arrayEx08{
+public class desafioArray09{
 
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
@@ -51,6 +51,7 @@ public class arrayEx08{
         System.out.println("Média da turma: %.1f".formatted(media));
 
         //histograma das notas
+        System.out.println("Histograma notas: ");
         for (int i = 0; i <= 9; i++) {
             double inicio = i; 
             double fim = i + 1;
@@ -61,11 +62,11 @@ public class arrayEx08{
                    contadorX++; 
                 }
             }
-
-            System.out.println("%.1f ~ %.1f".formatted(inicio, fim)); //imprimindo o intervalo de notas
+            
+            System.out.print("%.1f ~ %.1f".formatted(inicio, fim)); //imprimindo o intervalo de notas
             //imprimindo os "*" do histograma
             for (int k = 0; k < contadorX; k++) {
-                System.out.print("*");
+                System.out.print(" *");
             }
             System.out.println();
         }
